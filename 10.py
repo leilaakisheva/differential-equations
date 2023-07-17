@@ -14,16 +14,6 @@ from scipy.integrate import odeint
 G=6.67e-11
 M=1.989e30
 
-"""#**Assignment 10**
-###**Abstract**
-In this assignment, I have solved the differential equation of motion for a planet around the Sun, assuming purely circular orbit using two numerical methods, Euler's method and Runge-Kutta's method. The initial conditions for the position and velocity of the planet Mercury have been defined, and the trajectory of the planet has been plotted for 180 days and 1 year for both methods. Furthermore, the relative error has been calculated for both methods and compared to determine the accuracy of the numerical solutions.
-###**Introduction**
-The motion of a planet around the Sun can be described by a differential equation that relates the acceleration of the planet to the gravitational force exerted by the Sun. The objective is to determine the accuracy of the numerical solutions and compare the results obtained from the two methods. I chose the planet **Mercury** as an example and defined the initial conditions for its position and velocity. The trajectory of the planet was plotted for 180 days and 1 year for both methods, and the relative error was calculated to determine the accuracy of the numerical solutions.
-
-###**Methods**
-First I separate differential equations for x and y. Then I define euler function and rk4 function, which were bases on the Euler's and Runge-Kutta's methods.
-"""
-
 def dxdt(x, y):
   r=np.sqrt(x**2+y**2)
   ax=-G*M*x/r**3
@@ -137,10 +127,4 @@ ax2.set_title("RK4  (180 days)", fontsize=8)
 ax3.set_title("Euler (360 days)", fontsize=8)
 ax4.set_title("RK4 (360 days)", fontsize=8)
 
-"""###**Results**
-It can be seen that as the number of iterations increases the Euler's method is  less accurate and the relative error increases. This can be also seen in the plot: the calculated trajectory of the Mercury using Euler method has a very big deviation.
-
-###**Conclusion**
-In conclusion, the ODE was successfully solved using Euler's method and Runge-Kutta's method. The accuracy of the numerical solutions was determined by calculating the relative error, and it was found that Runge-Kutta's method produced more accurate results.
-"""
 
