@@ -2,7 +2,7 @@
 The differential equation of motion for a planet around the Sun, assuming purely circular orbit, has the following form:
 
 
-$$\frac{d^2 \vec{r}}{dt^2}$ = - G $\frac{M}{r^2} \vec{u_r}$$
+$$\frac{d^2 \vec{r}}{dt^2} = - G\frac{M}{r^2} \vec{u_r}$$
 
 
 Let's define the gravitational constant and the mass of the Sun.
